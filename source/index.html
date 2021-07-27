@@ -23,12 +23,12 @@
               <a href="contest-form">Конкурс</a>
             </li>
             <li class="main-nav__item">
-              <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+              <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML Academy</a>
             </li>
           </ul>
         </div>
       </nav>
-      <div class="page-header__promo">
+      <div class="page-header__promo promo">
         <p class="promo__slogan">
           Взгляните на жизнь <br>
           иначе!
@@ -36,56 +36,50 @@
       </div>
     </header>
     <main class="page-main">
-
       <h1 class="visually-hidden">Pink - раскрась серые будни!</h1>
-
       <section class="download">
         <div class="download__wrapper">
           <h2 class="visually-hidden">Скачайте приложение на любое устройство</h2>
-          <a class="download__link-main" href="https://www.apple.com/ru/app-store/">Скачать приложение</a>
+          <a class="download__link-main" href="https://www.apple.com/ru/app-store/" target="_blank">Скачать приложение</a>
           <ul class="download__list">
             <li class="download__item">
-              <a class="download__link download__link--appstore" href="https://www.apple.com/ru/app-store/">Приложение в App Store</a>
+              <a class="download__link download__link--appstore" href="https://www.apple.com/ru/app-store/" target="_blank">Приложение в App Store</a>
             </li>
             <li class="download__item">
-              <a class="download__link download__link--googleplay" href="https://play.google.com/store/">Приложение в Google Play</a>
+              <a class="download__link download__link--googleplay" href="https://play.google.com/store/" target="_blank">Приложение в Google Play</a>
             </li>
             <li class="download__item">
-              <a class="download__link download__link--microsoftstore" href="https://www.microsoft.com/ru-ru/store/apps/windows-phone">Приложение в Microsoft Store</a>
+              <a class="download__link download__link--microsoftstore" href="https://www.microsoft.com/ru-ru/store/apps/windows-phone" target="_blank">Приложение в Microsoft Store</a>
             </li>
           </ul>
           <p class="download__info">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </div>
       </section>
-
-      <section class="information">
-        <div class="information__wrapper">
-          <h2 class="visually-hidden">Информация</h2>
-          <p class="information__text">Устали от серости мегаполиса?</p>
-          <p class="information__text">Нам есть, что вам предложить!</p>
-        </div>
-      </section>
-
       <section class="advantages">
         <div class="advantages__wrapper">
-          <h2 class="visually-hidden">Наши преимущества</h2>
-          <ul class="advantages__list">
-            <li class="advantages__item advantages__item--mood">
-              <h3 class="advantages__title">Поднимает настроение</h3>
-              <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-            </li>
-            <li class="advantages__item advantages__item--world">
-              <h3 class="advantages__title">Меняет мир вокруг</h3>
-              <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-            </li>
-            <li class="advantages__item advantages__item--friends">
-              <h3 class="advantages__title">Заводит новых друзей</h3>
-              <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-            </li>
-          </ul>
+          <h2 class="visually-hidden">Преимущества</h2>
+          <div class="advantages__info">
+            <p class="advantages__text">Устали от серости мегаполиса?</p>
+            <p class="advantages__text">Нам есть, что вам предложить!</p>
+          </div>
+          <div class="advantages__box">
+            <ul class="advantages__list">
+              <li class="advantages__item advantages__item--mood">
+                <h3 class="advantages__title">Поднимает настроение</h3>
+                <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+              </li>
+              <li class="advantages__item advantages__item--world">
+                <h3 class="advantages__title">Меняет мир вокруг</h3>
+                <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+              </li>
+              <li class="advantages__item advantages__item--friends">
+                <h3 class="advantages__title">Заводит новых друзей</h3>
+                <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
-
       <section class="reviews">
         <div class="reviews__wrapper slider">
           <h2 class="visually-hidden">Отзывы о нас</h2>
@@ -112,23 +106,20 @@
                 <p class="reviews__author-description">22 года, студент</p>
               </div>
             </blockquote>
-            <button class="reviews__prev" type="button">Предыдущий отзыв</button>
-            <button class="reviews__next" type="button">Следующий отзыв</button>
           </div>
-          <p class="reviews__toggles slider__toggles">
-            <button class="slider__toggle slider__toggle--current" type="button">1</button>
-            <button class="slider__toggle" type="button">2</button>
-            <button class="slider__toggle" type="button">3</button>
-          </p>
+          <ol class="reviews__dots slider__dots">
+            <li class="slider__dot"><button class="slider__button slider__button--current" type="button">1</button></li>
+            <li class="slider__dot"><button class="slider__button" type="button">2</button></li>
+            <li class="slider__dot"><button class="slider__button" type="button">3</button></li>
+          </ol>
+            <button class="slider__nav slider__nav--prev" type="button">Предыдущий отзыв</button>
+            <button class="slider__nav slider__nav--next" type="button">Следующий отзыв</button>
         </div>
       </section>
-
       <section class="price">
         <div class="price__wrapper slider">
-
           <h2 class="visually-hidden">Стоимость приложения</h2>
-
-          <table class="price__table table-price">
+          <table class="price__table price-table">
             <thead>
               <tr>
                 <th class="price-table__header">
@@ -172,7 +163,6 @@
                   </div>
                 </td>
               </tr>
-
               <tr>
                 <td class="price-table__row">Смайлики</td>
                 <td class="price-table__row">
@@ -223,49 +213,43 @@
               </tr>
             </tbody>
           </table>
-
-          <p class="price__toggles slider__toggles">
-            <button class="slider__toggle" type="button">1</button>
-            <button class="slider__toggle slider__toggle--current" type="button">2</button>
-            <button class="slider__toggle" type="button">3</button>
-          </p>
-
+          <ol class="price__dots slider__dots">
+            <li class="slider__dot"><button class="slider__button" type="button">1</button></li>
+            <li class="slider__dot"><button class="slider__button slider__button--current" type="button">2</button></li>
+            <li class="slider__dot"><button class="slider__button" type="button">3</button></li>
+          </ol>
         </div>
       </section>
-
       <section class="contacts">
         <div class="contacts__wrapper">
           <h2 class="visually-hidden">Наши контакты</h2>
-
           <p class="contacts__title">Остались вопросы?<br>Свяжитесь с нами!</p>
           <div class="contacts__list">
-            <dl class="contacts__item contacts__item--phone">
-              <dt class="contacts__title">Звоните:</dt>
-              <dd class="contacts__text">
+            <ul class="contacts__item contacts__item--phone">
+              <li class="contacts__title">Звоните:</li>
+              <li class="contacts__text">
                 <a class="contacts__phone" href="tel:+78125556666">+7 (812) 555-66-66</a>
-              </dd>
-            </dl>
-            <dl class="contacts__item contacts__item--email">
-              <dt class="contacts__title">Пишите:</dt>
-              <dd class="contacts__text">
+              </li>
+            </ul>
+            <ul class="contacts__item contacts__item--email">
+              <li class="contacts__title">Пишите:</li>
+              <li class="contacts__text">
                 <a class="contacts__email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-              </dd>
-            </dl>
-            <dl class="contacts__item contacts__item--adress">
-              <dt class="contacts__title">Приезжайте в гости:</dt>
-              <dd class="contacts__text">ул. Большая Конюшенная, 19/8</dd>
-            </dl>
+              </li>
+            </ul>
+            <ul class="contacts__item contacts__item--adress">
+              <li class="contacts__title">Приезжайте в гости:</li>
+              <li class="contacts__text">ул. Большая Конюшенная, 19/8</li>
+            </ul>
           </div>
         </div>
       </section>
-
       <section class="map">
         <div class="map__wrapper">
           <h2 class="visually-hidden">Как к нам добраться</h2>
-          <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Acde6eb77faa8377604c5a1ba312f9b91bfa037f055f8c2df8531e534d634b701&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=false"></script>
+          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Acde6eb77faa8377604c5a1ba312f9b91bfa037f055f8c2df8531e534d634b701&amp;source=constructor" width="100%" height="500" frameborder="0"></iframe>
         </div>
       </section>
-
       <section class="page-footer">
         <div class="page-footer__wrapper">
           <h2 class="visually-hidden">Наши социальные сети</h2>
@@ -275,25 +259,24 @@
           <div class="social">
             <ul class="social__list">
               <li class="social__item">
-                <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">Мы в Твиттере</a>
+                <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru" target="_blank">Мы в Твиттере</a>
               </li>
               <li class="social__item">
-                <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+                <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" target="_blank">Мы в Фейсбуке</a>
               </li>
               <li class="social__item">
-                <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы на Ютубе</a>
+                <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru" target="_blank">Мы на Ютубе</a>
               </li>
             </ul>
           </div>
           <div class="developed">
             <div class="developed__wrapper">
-              <a class="developed__link" href="https://htmlacademy.ru/intensive/adaptive">
+              <a class="developed__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
                 Разработано
                 <img src="img/htmlacademy_footer-logo.jpg" alt="Логотип HTML Academy">
               </a>
             </div>
           </div>
-
         </div>
       </section>
     </main>
