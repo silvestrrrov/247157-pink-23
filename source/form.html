@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Конкурс</title>
+  </head>
+  <body class="page__body">
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img src="img/logotype-mobile.svg" width="73" height="23" alt="Логотип Pink">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="catalog.html">Фотографии</a>
+            </li>
+            <li class="main-nav__item main-nav__item--active">
+              <a>Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="page-header__promo promo">
+        <p class="promo__slogan">
+          Конкурс на самое<br>
+          безбашенное<br>
+          путешествие с Пинк
+        </p>
+      </div>
+    </header>
+    <main class="page-inner">
+      <h1 class="visually-hidden">Форма для участия в конкурсе</h1>
+      <div class="page-inner__wrapper">
+        <p class="page-inner__info">
+          Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+        </p>
+        <form class="page-inner__feedback-form feedback-form" action="https://echo.htmlacademy.ru/" method="post">
+          <div class="feedback-form__username-wrapper">
+            <fieldset class="feedback-form__fieldset feedback-form__fieldset--username">
+              <ul class="feedback-form__list">
+                <li class="feedback-form__username-item">
+                  <label class="feedback-form__label">Фамилия:</label>
+                  <input class="feedback-form__input" type="text" name="lastname" placeholder="Укажите фамилию *" required>
+                </li>
+                <li class="feedback-form__username-item">
+                  <label class="feedback-form__label">Имя:</label>
+                  <input class="feedback-form__input" type="text" name="lastname" placeholder="Введите ваше имя *" required>
+                </li>
+                <li class="feedback-form__username-item">
+                  <label class="feedback-form__label">Отчество:</label>
+                  <input class="feedback-form__input" type="text" name="lastname" placeholder="Ну и отчество тоже">
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="feedback-form__achievements-wrapper">
+            <fieldset class="feedback-form__fieldset feedback-form__fieldset--achievements">
+              <legend class="feedback-form__legend">
+                <span class="feedback-form__legend-text">Ваши безбашенные достижения в путешествии</span>
+              </legend>
+              <ul class="feedback-form__list">
+                <li class="feedback-form__achievements-item">
+                  <input class="feedback-form__checkbox" type="checkbox" id="shark" value="shark" name="achivments"  checked>
+                  <label class="feedback-form__label-checkbox" for="shark">Сделал селфи с акулой</label>
+                </li>
+                <li class="feedback-form__achievements-item">
+                  <input class="feedback-form__checkbox" type="checkbox" id="beach" value="beach" name="achivments"  checked>
+                  <label class="feedback-form__label-checkbox" for="beach">Обгорел на пляже</label>
+                </li>
+                <li class="feedback-form__achievements-item">
+                  <input class="feedback-form__checkbox" type="checkbox" id="сhuck" value="сhuck" name="achivments">
+                  <label class="feedback-form__label-checkbox" for="сhuck">Видел Чака Норриса</label>
+                </li>
+                <li class="feedback-form__achievements-item">
+                  <input class="feedback-form__checkbox" type="checkbox" id="souvenir" value="souvenir" name="achivments">
+                  <label class="feedback-form__label-checkbox" for="souvenir">Накупил сувениров</label>
+                </li>
+                <li class="feedback-form__achievements-item">
+                  <input class="feedback-form__checkbox" type="checkbox" id="tower" value="tower" name="achivments"  checked>
+                  <label class="feedback-form__label-checkbox" for="tower">Удержал башню</label>
+                </li>
+                <li class="feedback-form__achievements-item">
+                  <input class="feedback-form__checkbox" type="checkbox" id="hotel" value="hotel" name="achivments">
+                  <label class="feedback-form__label-checkbox" for="hotel">Разгромил отель</label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="feedback-form__contacts-wrapper">
+            <fieldset class="feedback-form__fieldset feedback-form__fieldset--contacts">
+              <legend class="feedback-form__legend">
+                <span class="feedback-form__legend-text">Контактная информация</span>
+              </legend>
+              <ul class="feedback-form__list">
+                <li class="feedback-form__name-item feedback-form__name-item--contacts feedback-form__name-item--phone">
+                  <label class="feedback-form__label feedback-form__label--contacts" for="tel">Номер телефона</label>
+                  <input class="feedback-form__input feedback-form__input--contacts" type="tel" id="tel" name="tel" placeholder="Номер, пожалуйста">
+                </li>
+                <li class="feedback-form__name-item feedback-form__name-item--contacts feedback-form__name-item--email">
+                  <label class="feedback-form__label feedback-form__label--contacts" for="email">Адрес почты</label>
+                  <input class="feedback-form__input feedback-form__input--contacts" type="email" id="email" name="email" placeholder="Введите почту *">
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+
+          <div class="feedback-form__app-wrapper">
+            <fieldset class="feedback-form__fieldset feedback-form__fieldset--app">
+              <legend class="feedback-form__legend">
+                <span class="feedback-form__legend-text">С каким приложением путешествовали?</span>
+              </legend>
+              <ul class="feedback-form__list">
+                <li class="feedback-form__app-item">
+                  <input class="feedback-form__radio" type="radio" id="ios" name="app" value="iOS" checked>
+                  <label class="feedback-form__label-radio" for="ios">Pink для iOS</label>
+                </li>
+                <li class="feedback-form__app-item">
+                  <input class="feedback-form__radio" type="radio" id="android" name="app" value="android">
+                  <label class="feedback-form__label-radio" for="android">Pink на Android</label>
+                </li>
+                <li class="feedback-form__app-item">
+                  <input class="feedback-form__radio" type="radio" id="windows" name="app" value="windows">
+                  <label class="feedback-form__label-radio" for="windows">Windows Phone</label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="feedback-form__emotions-wrapper">
+            <fieldset class="feedback-form__fieldset feedback-form__fieldset--emotions">
+              <legend class="feedback-form__legend">
+                <span class="feedback-form__legend-text">Опишите свои эмоции</span>
+              </legend>
+              <textarea class="feedback-form__textarea feedback-form__input" name="comment" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            </fieldset>
+          </div>
+          <div class="feedback-form__submit-wrapper">
+            <button class="feedback-form__button" type="submit">Отправить форму</button>
+            <p class="feedback-form__notification"><span class="feedback-form__asterisk">*</span> — обязательные для заполнения поля</p>
+
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <h2 class="visually-hidden">Наши социальные сети</h2>
+        <a class="page-footer__logo">
+          <img src="img/footer-logotype-tablet.svg" width="145" height="40" alt="Логотип Pink">
+        </a>
+        <div class="social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru" target="_blank">Мы в Твиттере</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" target="_blank">Мы в Фейсбуке</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru" target="_blank">Мы на Ютубе</a>
+            </li>
+          </ul>
+        </div>
+        <div class="developed">
+          <div class="developed__wrapper">
+            <a class="developed__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+              Разработано
+              <img src="img/htmlacademy_footer-logo.jpg" alt="Логотип HTML Academy">
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
