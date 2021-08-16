@@ -1,0 +1,30 @@
+.logo-pink-white-tablet,
+.logo-pink-white-desktop,
+.logo-pink-blue-desktop {
+  display: none;
+}
+
+@media (min-width: 600px) {
+  .logo-pink-white-mobile,
+  .logo-pink-white-desktop {
+    display: none;
+  }
+
+  .logo-pink-white-tablet,
+  .logo-pink-blue-mobile-tablet {
+    display: block;
+  }
+}
+
+@media (min-width: 1280px) {
+  .logo-pink-white-mobile,
+  .logo-pink-white-tablet,
+  .logo-pink-blue-mobile-tablet {
+    display: none;
+  }
+
+  .logo-pink-white-desktop,
+  .logo-pink-blue-desktop {
+    display: block;
+  }
+}
