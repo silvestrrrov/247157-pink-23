@@ -1,0 +1,70 @@
+.button {
+  display: block;
+  border: none;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+
+  &--square {
+    padding: 16px 15px;
+    border-radius: 2px;
+    line-height: 30px;
+    text-transform: uppercase;
+  }
+
+  &--green {
+    color: #fff;
+    background-color: #2AAB6D;
+  }
+
+  &--green:hover {
+    background-color: #1C9B5E;
+  }
+
+  &--green:active {
+    color: fade(#E5E5E5, 30%);
+  }
+
+  &--round {
+    padding: 15px;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 30px;
+    line-height: 18px;
+    background-color: transparent;
+  }
+
+  &--post {
+    border-color: #D22856;
+    color: #D22856;
+  }
+
+  &--post:hover {
+    color: #fff;
+    background-color: #D22856;
+  }
+
+  &--post:active {
+    color: fade(#fff, 30%);
+    background-color: #D22856;
+  }
+
+  &--cancel {
+    border-color: fade(#283645, 10%);
+    color: #dddfe0;
+  }
+
+  &--cancel:hover {
+    border-color: fade(#283645, 30%);
+    color: fade(#283645, 30%);
+  }
+
+  &--cancel:active {
+    border-color: fade(#283645, 0%);
+    color: fade(#fff, 30%);
+    background-color: fade(#283645, 30%);
+  }
+}
+
+

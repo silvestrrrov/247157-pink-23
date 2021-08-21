@@ -60,6 +60,9 @@
         <path d="M20.8487 1.37761e-06L0 20.8487L2.15131 23L23 2.15131L20.8487 1.37761e-06Z" fill="white"/>
         <path d="M2.15131 0L0 2.15131L20.8487 23L23 20.8487L2.15131 0Z" fill="white"/>
       </symbol>
+      <symbol id="logo-html-academy" viewBox="0 0 27 34">
+        <path d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z" fill="currentColor"/>
+      </symbol>
     </svg>
     <header class="page-header">
       <nav class="main-nav">
@@ -133,69 +136,83 @@
       </div>
     </header>
     <main class="page-main">
+      <div class="page-main__info">
+        <p class="page-main__text">Устали от серости мегаполиса?</p>
+        <p class="page-main__text">Нам есть, что вам предложить!</p>
+      </div>
       <section class="advantages">
-        <div class="advantages__wrapper">
-          <h2 class="visually-hidden">Преимущества</h2>
-          <div class="advantages__info">
-            <p class="advantages__text">Устали от серости мегаполиса?</p>
-            <p class="advantages__text">Нам есть, что вам предложить!</p>
+        <h2 class="visually-hidden">Преимущества</h2>
+        <ul class="advantages__list">
+          <li class="advantages__item advantages__item--first">
+            <h3 class="advantages__title">Поднимает настроение</h3>
+            <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </li>
+          <li class="advantages__item advantages__item--second">
+            <h3 class="advantages__title">Меняет мир вокруг</h3>
+            <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </li>
+          <li class="advantages__item advantages__item--third">
+            <h3 class="advantages__title">Заводит новых друзей</h3>
+            <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </li>
+        </ul>
+      </section>
+      <section class="research">
+        <div class="research__wrapper">
+          <div class="research__image">
+            <span class="research__image-text">24</span>
           </div>
-          <div class="advantages__box">
-            <ul class="advantages__list">
-              <li class="advantages__item advantages__item--mood">
-                <h3 class="advantages__title">Поднимает настроение</h3>
-                <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию<br> буквально в несколько кликов!</p>
-              </li>
-              <li class="advantages__item advantages__item--world">
-                <h3 class="advantages__title">Меняет мир вокруг</h3>
-                <p class="advantages__description">Сделайте снимок и украсьте его<br> смайликом или текстовой подписью,<br> чтобы усилить эффект</p>
-              </li>
-              <li class="advantages__item advantages__item--friends">
-                <h3 class="advantages__title">Заводит новых друзей</h3>
-                <p class="advantages__description">Ставьте лайки, комментируйте,<br> делитесь фотографиями с друзьями и<br> заводите новых</p>
-              </li>
-            </ul>
+          <div class="research__info">
+            <h2 class="research__info-title">Эффект<br class="desktop-hidden"> на 24 часа!</h2>
+            <p class="research__info-text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!
+            </p>
+            <a class="research__info-link" href="#">Узнать больше об исследовании</a>
           </div>
         </div>
       </section>
-      <section class="reviews">
-        <div class="reviews__wrapper slider">
+      <section class="reviews-slider">
+        <div class="reviews-slider__wrapper">
           <h2 class="visually-hidden">Отзывы о нас</h2>
-          <div class="reviews__list slider__list">
-            <blockquote class="reviews__item slider__item">
-              <div class="reviews__author-info">
-                <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
-                  А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-                <cite class="reviews__author-name">Николай Петров</cite>
-                <p class="reviews__author-description">25 лет, водитель трамвая</p>
-              </div>
+          <div class="reviews-slider__slide reviews-slider__slide--active">
+            <blockquote class="reviews-slider__quote">
+              <p class="reviews-slider__quote-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+                А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </blockquote>
-            <blockquote class="reviews__item slider__item">
-              <div class="reviews__author-info">
-                <p class="reviews__text">«Лучшее приложение из всех подобных»</p>
-                <cite class="reviews__author-name">Александр Иванов</cite>
-                <p class="reviews__author-description">30 лет, менеджер по продажам</p>
-              </div>
-            </blockquote>
-            <blockquote class="reviews__item slider__item">
-              <div class="reviews__author-info">
-                <p class="reviews__text">«Очень нравится приложение. Красивое, а главное удобное!»</p>
-                <cite class="reviews__author-name">Андрей Васин</cite>
-                <p class="reviews__author-description">22 года, студент</p>
-              </div>
-            </blockquote>
+                <p class="reviews-slider__author-name">Николай Петров</p>
+                <p class="reviews-slider__author-description">25 лет, водитель трамвая</p>
           </div>
-          <ol class="reviews__dots slider__dots">
-            <li class="slider__dot"><button class="slider__button slider__button--current" type="button">1</button></li>
-            <li class="slider__dot"><button class="slider__button" type="button">2</button></li>
-            <li class="slider__dot"><button class="slider__button" type="button">3</button></li>
-          </ol>
-            <button class="slider__nav slider__nav--prev" type="button">Предыдущий отзыв</button>
-            <button class="slider__nav slider__nav--next" type="button">Следующий отзыв</button>
+          <div class="reviews-slider__slide">
+            <blockquote class="reviews-slider__quote">
+              <p class="reviews-slider__quote-text">«Лучшее приложение из всех подобных»</p>
+            </blockquote>
+                <p class="reviews-slider__author-name">Александр Иванов</p>
+                <p class="reviews-slider__author-description">30 лет, менеджер по продажам</p>
+          </div>
+          <div class="reviews-slider__slide">
+            <blockquote class="reviews-slider__quote">
+              <p class="reviews-slider__quote-text">«Очень нравится приложение. Красивое, а главное удобное!»</p>
+            </blockquote>
+                <p class="reviews-slider__author-name">Андрей Васин</p>
+                <p class="reviews-slider__author-description">22 года, студент</p>
+          </div>
+          <div class="reviews-slider__slider-dots slider-dots">
+            <button class="slider-dot__button slider-dot__button--active" type="button" aria-label="1">
+            </button>
+            <button class="slider-dot__button" type="button" aria-label="2">
+            </button>
+            <button class="slider-dot__button" type="button" aria-label="3">
+            </button>
+          </div>
+          <div class="reviews-slider__slider-nav slider-nav">
+            <button class="slider-nav__slider-button slider-nav__slider-button--prev" type="button" aria-label="Предыдущий отзыв">
+            </button>
+            <button class="slider-nav__slider-button slider-nav__slider-button--next" type="button" aria-label="Следующий отзыв">
+            </button>
+          </div>
         </div>
       </section>
       <section class="price">
-        <div class="price__wrapper slider">
+        <div class="price__wrapper">
           <h2 class="visually-hidden">Стоимость приложения</h2>
           <table class="price__table price-table">
             <thead>
@@ -218,22 +235,22 @@
             </thead>
             <tbody>
               <tr>
-                <td class="price-table__row">Розовый фильтр</td>
-                <td class="price-table__row">
+                <td class="price-table__cell">Розовый фильтр</td>
+                <td class="price-table__cell">
                   <div class="price-table__feature" data-feature-name="Розовый фильтр">
                     <span class="price-table__feature-value price-table__feature-value--true">
                       <span class="visually-hidden">Да</span>
                     </span>
                   </div>
                 </td>
-                <td class="price-table__row">
+                <td class="price-table__cell">
                   <div class="price-table__feature" data-feature-name="Розовый фильтр">
                     <span class="price-table__feature-value price-table__feature-value--true">
                       <span class="visually-hidden">Да</span>
                     </span>
                   </div>
                 </td>
-                <td class="price-table__row">
+                <td class="price-table__cell">
                   <div class="price-table__feature" data-feature-name="Розовый фильтр">
                     <span class="price-table__feature-value price-table__feature-value--true">
                       <span class="visually-hidden">Да</span>
@@ -242,22 +259,22 @@
                 </td>
               </tr>
               <tr>
-                <td class="price-table__row">Смайлики</td>
-                <td class="price-table__row">
+                <td class="price-table__cell">Смайлики</td>
+                <td class="price-table__cell">
                   <div class="price-table__feature" data-feature-name="Смайлики">
                     <span class="price-table__feature-value price-table__feature-value--false">
                       <span class="visually-hidden">Нет</span>
                     </span>
                   </div>
                 </td>
-                <td class="price-table__row">
+                <td class="price-table__cell">
                   <div class="price-table__feature" data-feature-name="Смайлики">
                     <span class="price-table__feature-value price-table__feature-value--true">
                       <span class="visually-hidden">Да</span>
                     </span>
                   </div>
                 </td>
-                <td class="price-table__row">
+                <td class="price-table__cell">
                   <div class="price-table__feature" data-feature-name="Смайлики">
                     <span class="price-table__feature-value price-table__feature-value--true">
                       <span class="visually-hidden">Да</span>
@@ -266,22 +283,22 @@
                 </td>
               </tr>
               <tr>
-                <td class="price-table__row">Комментарии</td>
-                <td class="price-table__row">
+                <td class="price-table__cell">Комментарии</td>
+                <td class="price-table__cell">
                   <div class="price-table__feature" data-feature-name="Комментарии">
                     <span class="price-table__feature-value price-table__feature-value--false">
                       <span class="visually-hidden">Нет</span>
                     </span>
                   </div>
                 </td>
-                <td class="price-table__row">
+                <td class="price-table__cell">
                   <div class="price-table__feature" data-feature-name="Комментарии">
                     <span class="price-table__feature-value price-table__feature-value--false">
                       <span class="visually-hidden">Нет</span>
                     </span>
                   </div>
                 </td>
-                <td class="price-table__row">
+                <td class="price-table__cell">
                   <div class="price-table__feature" data-feature-name="Комментарии">
                     <span class="price-table__feature-value price-table__feature-value--true">
                       <span class="visually-hidden">Да</span>
@@ -291,11 +308,11 @@
               </tr>
             </tbody>
           </table>
-          <ol class="price__dots slider__dots">
-            <li class="slider__dot"><button class="slider__button" type="button">1</button></li>
-            <li class="slider__dot"><button class="slider__button slider__button--current" type="button">2</button></li>
-            <li class="slider__dot"><button class="slider__button" type="button">3</button></li>
-          </ol>
+          <div class="price__dots slider__dots">
+            <button class="slider__button" type="button" aria-label="1"></button>
+            <button class="slider__button slider__button--active" type="button" aria-label="2"></button>
+            <button class="slider__button" type="button" aria-label="3"></button>
+          </div>
         </div>
       </section>
       <section class="contacts">
@@ -304,19 +321,19 @@
           <p class="contacts__title">Остались вопросы?<br>Свяжитесь с нами!</p>
           <div class="contacts__list">
             <ul class="contacts__item contacts__item--phone">
-              <li class="contacts__title">Звоните:</li>
+              <li class="contacts__subtitle">Звоните:</li>
               <li class="contacts__text">
-                <a class="contacts__phone" href="tel:+78125556666">+7 (812) 555-66-66</a>
+                <a class="contacts__link" href="tel:+78125556666">+7 (812) 555-66-66</a>
               </li>
             </ul>
             <ul class="contacts__item contacts__item--email">
-              <li class="contacts__title">Пишите:</li>
+              <li class="contacts__subtitle">Пишите:</li>
               <li class="contacts__text">
-                <a class="contacts__email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+                <a class="contacts__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
               </li>
             </ul>
             <ul class="contacts__item contacts__item--adress">
-              <li class="contacts__title">Приезжайте в гости:</li>
+              <li class="contacts__subtitle">Приезжайте в гости:</li>
               <li class="contacts__text">ул. Большая Конюшенная, 19/8</li>
             </ul>
           </div>
@@ -325,14 +342,14 @@
       <section class="map">
         <div class="map__wrapper">
           <h2 class="visually-hidden">Как к нам добраться</h2>
-          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Acde6eb77faa8377604c5a1ba312f9b91bfa037f055f8c2df8531e534d634b701&amp;source=constructor" width="320" height="240" frameborder="0"></iframe>
+          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A764ec71ef5217a5df0dd4d06ae019dbdc93bbbd0ad20e332b4cfcb2e3e069efd&amp;source=constructor" width="100%" frameborder="0"></iframe>
         </div>
       </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <h2 class="visually-hidden">Наши социальные сети</h2>
-        <a class="logo logo--page-footer">
+        <a class="page-footer__logo">
           <svg class="logo-pink-blue-mobile-tablet" width="145" height="40">
             <use xlink:href="#logo-pink-blue-mobile-tablet"></use>
           </svg>
@@ -344,28 +361,28 @@
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru" target="_blank">
-                <img src="../source/img/twitter.svg" width="18" height="14" alt="Логотип Twitter">
+                <img class="social__link-logo" src="../source/img/twitter.svg" width="18" height="14" alt="Логотип Twitter">
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" target="_blank">
-                <img src="../source/img/facebook.svg" width="9" height="18" alt="Логотип Facebook">
+                <img class="social__link-logo" src="../source/img/facebook.svg" width="9" height="18" alt="Логотип Facebook">
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
-                <img src="../source/img/youtube.svg" width="15" height="13" alt="Логотип Youtube">
+                <img class="social__link-logo" src="../source/img/youtube.svg" width="15" height="13" alt="Логотип Youtube">
               </a>
             </li>
           </ul>
         </div>
-        <div class="developed">
-          <div class="developed__wrapper">
-            <a class="developed__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
-              Разработано
-              <img src="img/htmlacademy_footer-logo.jpg" alt="Логотип HTML Academy">
+        <div class="page-footer__developed">
+          <p class="page-footer__developed-text">Разработано</p>
+            <a class="page-footer__developed-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+              <svg class="page-footer__developed-logo" width="27" height="34">
+                <use xlink:href="#logo-html-academy"></use>
+              </svg>
             </a>
-          </div>
         </div>
       </div>
     </footer>
