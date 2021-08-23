@@ -8,6 +8,7 @@
   @media (min-width: 600px) {
     display: flex;
     flex-direction: column;
+    padding: 0 20px;
   }
 
   @media (min-width: 1280px) {
@@ -53,11 +54,11 @@
 
 .feedback-form__achievements-wrapper {
   padding-top: 42px;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 
   @media (min-width: 600px) {
     order: 4;
-    background-color: #fff;
+    background-color: #ffffff;
   }
 
   @media (min-width: 1280px) {
@@ -73,6 +74,7 @@
     padding-top: 51px;
     order: 3;
   }
+
   @media (min-width: 1280px) {
     width: 100%;
   }
@@ -80,12 +82,13 @@
 
 .feedback-form__app-wrapper {
   padding-top: 32px;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 
   @media (min-width: 600px) {
     order: 2;
-    background-color: #fff;
+    background-color: #ffffff;
   }
+
   @media (min-width: 1280px) {
     width: 431px;
     margin-left: auto;
@@ -99,6 +102,7 @@
   @media (min-width: 600px) {
     order: 5;
   }
+
   @media (min-width: 1280px) {
     width: 100%;
   }
@@ -125,11 +129,11 @@
 .feedback-form__fieldset {
   position: relative;
   margin: 0;
-  padding: 0;
+  padding: 0 20px;
   border: 0;
 
   @media (min-width: 600px) {
-    border: 2px solid #E5E5E5;
+    border: 2px solid #e5e5e5;
     border-radius: 1px;
   }
 
@@ -196,7 +200,7 @@
   line-height: 18px;
   text-align: center;
   text-transform: uppercase;
-  color: #D22856;
+  color: #d22856;
 
   @media (min-width: 600px) {
     position: absolute;
@@ -219,7 +223,7 @@
   @media (min-width: 600px) {
     display: inline-flex;
     max-width: 90%;
-    background-color: #fff;
+    background-color: #ffffff;
   }
 
   &::before,
@@ -284,7 +288,7 @@
         right: 2px;
         width: 59px;
         height: 59px;
-        background-color: #E5E5E5;
+        background-color: #e5e5e5;
         background-repeat: no-repeat;
         background-position: center;
       }
@@ -296,11 +300,11 @@
     }
   }
 
-  &--phone:after {
+  &--phone::after {
     background-image: url("../img/phone-icon.svg");
   }
 
-  &--email:after {
+  &--email::after {
     background-image: url("../img/mail-icon.svg");
   }
 }
@@ -326,7 +330,6 @@
 }
 
 .feedback-form__button {
-
   @media (min-width: 600px) {
     width: 296px;
   }
@@ -359,7 +362,7 @@
 }
 
 .feedback-form__asterisk {
-  color: #D22856;
+  color: #d22856;
 }
 
 .feedback-form__label {
@@ -368,7 +371,7 @@
   margin-bottom: 7px;
   font-size: 14px;
   line-height: 30px;
-  color: #D22856;
+  color: #d22856;
   text-transform: uppercase;
 
   @media (min-width: 600px) {
@@ -392,7 +395,7 @@
   width: 100%;
   box-sizing: border-box;
   min-height: 63px;
-  border: 2px solid #E5E5E5;
+  border: 2px solid #e5e5e5;
   border-radius: 1px;
   font-size: 18px;
   line-height: 30px;
@@ -403,7 +406,7 @@
 
   &:focus {
     outline: 0;
-    border-color: #D22856;
+    border-color: #d22856;
   }
 }
 
@@ -422,9 +425,9 @@
     transform: translateY(-50%);
     width: 35px;
     height: 35px;
-    border: 2px solid #E5E5E5;
+    border: 2px solid #e5e5e5;
     border-radius: 2px;
-    background-color: #fff;
+    background-color: #ffffff;
   }
 
   &::after {
@@ -435,8 +438,8 @@
     transform: rotate(-45deg);
     width: 21px;
     height: 10px;
-    border-left: 2px solid #D22856;
-    border-bottom: 2px solid #D22856;
+    border-left: 2px solid #d22856;
+    border-bottom: 2px solid #d22856;
   }
 }
 
@@ -451,9 +454,9 @@
     height: 35px;
     border-width: 2px;
     border-style: solid;
-    border-color: #E5E5E5;
+    border-color: #e5e5e5;
     border-radius: 50%;
-    background-color: #fff;
+    background-color: #ffffff;
   }
 
   &::after {
@@ -465,7 +468,7 @@
     height: 14px;
     transform: translateY(-50%);
     border-radius: 50%;
-    background-color: #D22856;
+    background-color: #d22856;
   }
 }
 
@@ -489,13 +492,13 @@
   }
 
   &:active::before {
-    border-color: #D22856;
+    border-color: #d22856;
   }
 }
 
 .feedback-form__checkbox {
   &:focus + .feedback-form__label-checkbox {
-    outline: 1px dashed #D22856;
+    outline: 1px dashed #d22856;
     outline-offset: 2px;
   }
 
@@ -508,14 +511,14 @@
   &:disabled + .feedback-form__label-checkbox {
     &::before,
     &::after {
-      border-color: fade(#E5E5E5, 50%);
+      border-color: fade(#e5e5e5, 50%);
     }
   }
 }
 
 .feedback-form__radio {
   &:focus + .feedback-form__label-radio {
-    outline: 1px dashed #D22856;
+    outline: 1px dashed #d22856;
     outline-offset: 2px;
   }
 
@@ -527,11 +530,11 @@
 
   &:disabled + .feedback-form__label-radio {
     &::before {
-      border-color: fade(#E5E5E5, 50%);
+      border-color: fade(#e5e5e5, 50%);
     }
 
     &::after {
-      background-color: fade(#E5E5E5, 50%);
+      background-color: fade(#e5e5e5, 50%);
     }
   }
 }
