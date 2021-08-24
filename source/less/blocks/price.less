@@ -1,0 +1,38 @@
+.price {
+  padding-top: 104px;
+  padding-bottom: 49px;
+  background-color: #f2f2f2;
+
+  @media (min-width: 600px) {
+    padding-top: 98px;
+    padding-bottom: 70px;
+  }
+}
+
+.price__wrapper {
+  margin: 0 auto;
+  line-height: 30px;
+  text-transform: uppercase;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.price__table {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @media (min-width: 600px) {
+    position: static;
+    left: auto;
+    transform: none;
+  }
+}
+
+.price__dots {
+  margin-top: 45px;
+
+  @media (min-width: 600px) {
+    display: none;
+  }
+}

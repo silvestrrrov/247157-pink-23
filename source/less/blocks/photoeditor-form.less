@@ -1,0 +1,224 @@
+.photoeditor-form__wrapper {
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 20px;
+  min-width: 320px;
+  max-width: 940px;
+  background-color: #f2f2f2;
+}
+
+.photoeditor-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 41px;
+
+  @media (min-width: 600px) {
+    flex-direction: row;
+    align-items: flex-start;
+    padding-top: 40px;
+    padding-bottom: 29px;
+  }
+
+  @media (min-width: 1280px) {
+    padding: 41px 60px 57px 80px;
+  }
+}
+
+.photoeditor-form__image {
+  display: block;
+  width: 280px;
+  height: 374px;
+  background-image: url("../img/photo-7-mobile.jpg");
+
+  @media (min-width: 600px) {
+    width: 300px;
+    height: 400px;
+    background-image: url("../img/photo-7-tablet.jpg");
+  }
+}
+
+.photoeditor-form__tools {
+  box-sizing: border-box;
+
+  @media (min-width: 600px) {
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 275px;
+  }
+
+  @media (min-width: 1280px) {
+    margin-left: 90px;
+    margin-right: 0;
+    width: 410px;
+  }
+}
+
+.photoeditor-form__filters {
+  padding: 42px 20px 38px;
+
+  @media (min-width: 600px) {
+    margin-bottom: 50px;
+    padding: 0;
+  }
+
+  @media (min-width: 1280px) {
+    margin-bottom: 130px;
+  }
+}
+
+.photoeditor-form__filters-buttons {
+  display: flex;
+  justify-content: space-around;
+  width: 240px;
+
+  @media (min-width: 600px) {
+    display: none;
+  }
+}
+
+.photoeditor-form__icon {
+  display: block;
+  fill: fade(#283645, 30%);
+  pointer-events: none;
+
+  &--crop {
+    @media (min-width: 600px) {
+      width: 22px;
+      height: 22px;
+    }
+
+    @media (min-width: 1280px) {
+      width: 44px;
+      height: 44px;
+    }
+  }
+
+  &--fill {
+    @media (min-width: 600px) {
+      width: 24px;
+      height: 22px;
+    }
+
+    @media (min-width: 1280px) {
+      width: 48px;
+      height: 43px;
+    }
+  }
+
+  &--contrast {
+    @media (min-width: 600px) {
+      width: 16px;
+      height: 16px;
+    }
+
+    @media (min-width: 1280px) {
+      width: 32px;
+      height: 32px;
+    }
+  }
+}
+
+.photoeditor-form__icon-wrapper {
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: 600px) {
+    display: flex;
+    width: 27px;
+    height: 27px;
+  }
+
+  @media (min-width: 1280px) {
+    width: 48px;
+    height: 48px;
+  }
+
+  & .photoeditor-form__icon {
+    fill: #d22856;
+  }
+}
+
+.photoeditor-form__filter-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0;
+  width: 48px;
+  height: 48px;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+
+  &--active .photoeditor-form__icon {
+    fill: #d22856;
+  }
+
+  &:focus {
+    outline: 1px dashed #d22856;
+  }
+
+  &:not(&--active):hover {
+    & .photoeditor-form__icon {
+      fill: fade(#283645, 50%);
+    }
+  }
+}
+
+.photoeditor-form__filter {
+  position: relative;
+  display: none;
+  align-items: center;
+  height: 72px;
+
+  @media (min-width: 600px) {
+    display: flex;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: -40px;
+    bottom: 0;
+    height: 1px;
+    background-color: #dddfe0;
+
+    @media (min-width: 600px) {
+      left: 0;
+      width: 100%;
+    }
+  }
+
+  &--active {
+    display: flex;
+  }
+}
+
+.photoeditor-form__buttons {
+  @media (min-width: 1280px) {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.photoeditor-form__button {
+  margin-bottom: 13px;
+  width: 100%;
+
+  @media (min-width: 600px) {
+    margin-bottom: 26px;
+    width: 260px;
+  }
+
+  @media (min-width: 1280px) {
+    margin-bottom: 0;
+    width: 45%;
+  }
+}

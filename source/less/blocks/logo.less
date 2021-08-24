@@ -1,0 +1,97 @@
+.logo-pink-white-mobile,
+.logo-pink-white-tablet,
+.logo-pink-white-desktop {
+  fill: #ffffff;
+}
+
+.logo-pink-blue-mobile-tablet,
+.logo-pink-blue-desktop {
+  fill: #283645;
+}
+
+.logo-pink-white-tablet,
+.logo-pink-white-desktop,
+.logo-pink-blue-desktop {
+  display: none;
+}
+
+.logo--page-header {
+  &:hover .logo-pink-white-mobile {
+    fill: #d22856;
+  }
+
+  &:active .logo-pink-white-mobile {
+    fill: #ffffff;
+    opacity: 0.3;
+    transition: 0.1s;
+  }
+}
+
+.page-footer__logo {
+  &:hover .logo-pink-blue-mobile-tablet {
+    fill: #d22856;
+  }
+
+  &:active .logo-pink-blue-mobile-tablet {
+    fill: #283645;
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: 600px) {
+  .logo-pink-white-mobile,
+  .logo-pink-white-desktop {
+    display: none;
+  }
+
+  .logo-pink-white-tablet,
+  .logo-pink-blue-mobile-tablet {
+    display: block;
+  }
+
+  .logo--page-header {
+    &:hover .logo-pink-white-tablet {
+      fill: #d22856;
+    }
+
+    &:active .logo-pink-white-tablet {
+      fill: #ffffff;
+      opacity: 0.3;
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .logo-pink-white-mobile,
+  .logo-pink-white-tablet,
+  .logo-pink-blue-mobile-tablet {
+    display: none;
+  }
+
+  .logo-pink-white-desktop,
+  .logo-pink-blue-desktop {
+    display: block;
+  }
+
+  .logo--page-header {
+    &:hover .logo-pink-white-desktop {
+      fill: #d22856;
+    }
+
+    &:active .logo-pink-white-desktop {
+      fill: #ffffff;
+      opacity: 0.3;
+    }
+  }
+
+  .page-footer__logo {
+    &:hover .logo-pink-blue-desktop {
+      fill: #d22856;
+    }
+
+    &:active .logo-pink-blue-desktop {
+      fill: #283645;
+      opacity: 0.3;
+    }
+  }
+}
