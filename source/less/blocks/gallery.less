@@ -4,16 +4,17 @@
   width: 280px;
 
   @media (min-width: 600px) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
     margin-top: 50px;
     width: 620px;
+    gap: 20px;
+    grid-template-columns: 300px 300px;
   }
 
   @media (min-width: 1280px) {
     margin-bottom: -54px;
     width: 940px;
+    grid-template-columns: 300px 300px 300px;
   }
 }
 
