@@ -123,17 +123,17 @@
               <ul class="download__list">
                 <li class="download__item">
                   <a class="download__link download__link--appstore" href="https://www.apple.com/ru/app-store/" target="_blank">
-                    <img src="../source/img/apple-logo.svg" width="47" height="56" alt="Логотип Apple">
+                    <img src="img/apple-logo.svg" width="47" height="56" alt="Логотип Apple">
                   </a>
                 </li>
                 <li class="download__item">
                   <a class="download__link download__link--googleplay" href="https://play.google.com/store/" target="_blank">
-                    <img src="../source/img/android-logo.svg" width="43" height="47" alt="Логотип Android">
+                    <img src="img/android-logo.svg" width="43" height="47" alt="Логотип Android">
                   </a>
                 </li>
                 <li class="download__item">
                   <a class="download__link download__link--microsoftstore" href="https://www.microsoft.com/ru-ru/store/apps/windows-phone" target="_blank">
-                    <img src="../source/img/microsoft-logo.svg" width="44" height="41" alt="Логотип Microsoft">
+                    <img src="img/microsoft-logo.svg" width="44" height="41" alt="Логотип Microsoft">
                   </a>
                 </li>
               </ul>
@@ -145,8 +145,8 @@
     </header>
     <main class="page-main">
       <div class="page-main__info">
-        <p class="page-main__text">Устали от серости мегаполиса?</p>
-        <p class="page-main__text">Нам есть, что вам предложить!</p>
+        <p class="page-main__text">Устали от серости<br class="tablet-hidden">мегаполиса?</p>
+        <p class="page-main__text">Нам есть, что вам<br>предложить!</p>
       </div>
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества</h2>
@@ -181,145 +181,153 @@
       <section class="reviews-slider">
         <div class="reviews-slider__wrapper">
           <h2 class="visually-hidden">Отзывы о нас</h2>
-          <div class="reviews-slider__slide reviews-slider__slide--active">
-            <blockquote class="reviews-slider__quote">
-              <p class="reviews-slider__quote-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
-                А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-            </blockquote>
-                <p class="reviews-slider__author-name">Николай Петров</p>
-                <p class="reviews-slider__author-description">25 лет, водитель трамвая</p>
-          </div>
-          <div class="reviews-slider__slide">
-            <blockquote class="reviews-slider__quote">
-              <p class="reviews-slider__quote-text">«Лучшее приложение из всех подобных»</p>
-            </blockquote>
-                <p class="reviews-slider__author-name">Александр Иванов</p>
-                <p class="reviews-slider__author-description">30 лет, менеджер по продажам</p>
-          </div>
-          <div class="reviews-slider__slide">
-            <blockquote class="reviews-slider__quote">
-              <p class="reviews-slider__quote-text">«Очень нравится приложение. Красивое, а главное удобное!»</p>
-            </blockquote>
-                <p class="reviews-slider__author-name">Андрей Васин</p>
-                <p class="reviews-slider__author-description">22 года, студент</p>
-          </div>
-          <div class="reviews-slider__slider-dots slider-dots">
-            <button class="slider-dot__button slider-dot__button--active" type="button" aria-label="1">
-            </button>
-            <button class="slider-dot__button" type="button" aria-label="2">
-            </button>
-            <button class="slider-dot__button" type="button" aria-label="3">
-            </button>
-          </div>
-          <div class="reviews-slider__slider-nav slider-nav">
-            <button class="slider-nav__slider-button slider-nav__slider-button--prev" type="button" aria-label="Предыдущий отзыв">
-            </button>
-            <button class="slider-nav__slider-button slider-nav__slider-button--next" type="button" aria-label="Следующий отзыв">
-            </button>
+          <div class="slider">
+            <div class="slider__wrapper">
+              <div class="reviews-slider__slide reviews-slider__slide--active">
+                <blockquote class="reviews-slider__quote">
+                  <p class="reviews-slider__quote-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+                    А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+                </blockquote>
+                    <p class="reviews-slider__author-name">Николай Петров</p>
+                    <p class="reviews-slider__author-description">25 лет, водитель трамвая</p>
+              </div>
+              <div class="reviews-slider__slide">
+                <blockquote class="reviews-slider__quote">
+                  <p class="reviews-slider__quote-text">«Лучшее приложение из всех подобных»</p>
+                </blockquote>
+                    <p class="reviews-slider__author-name">Александр Иванов</p>
+                    <p class="reviews-slider__author-description">30 лет, менеджер по продажам</p>
+              </div>
+              <div class="reviews-slider__slide">
+                <blockquote class="reviews-slider__quote">
+                  <p class="reviews-slider__quote-text">«Очень нравится приложение. Красивое, а главное удобное!»</p>
+                </blockquote>
+                    <p class="reviews-slider__author-name">Андрей Васин</p>
+                    <p class="reviews-slider__author-description">22 года, студент</p>
+              </div>
+              <div class="reviews-slider__slider-dots slider__dots">
+                <button class="slider-dot__button slider-dot__button--active" type="button" aria-label="1">
+                </button>
+                <button class="slider-dot__button" type="button" aria-label="2">
+                </button>
+                <button class="slider-dot__button" type="button" aria-label="3">
+                </button>
+              </div>
+              <div class="reviews-slider__slider-nav slider-nav">
+                <button class="slider-nav__slider-button slider-nav__slider-button--prev" type="button" aria-label="Предыдущий отзыв">
+                </button>
+                <button class="slider-nav__slider-button slider-nav__slider-button--next" type="button" aria-label="Следующий отзыв">
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </section>
-      <section class="price">
-        <div class="price__wrapper">
+      <section class="price-slider">
+        <div class="price-slider__wrapper">
           <h2 class="visually-hidden">Стоимость приложения</h2>
-          <table class="price__table price-table">
-            <thead>
-              <tr>
-                <th class="price-table__header">
-                </th>
-                <th class="price-table__header">
-                    <span class="price-table__version-type">База</span>
-                    <span class="price-table__version-price">1.99 USD</span>
-                </th>
-                <th class="price-table__header price-table__header--hit">
-                  <span class="price-table__version-type">Стандарт</span>
-                  <span class="price-table__version-price">3.99 USD</span>
-                </th>
-                <th class="price-table__header">
-                  <span class="price-table__version-type">Анлим</span>
-                  <span class="price-table__version-price">9.99 USD</span>
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="price-table__cell">Розовый фильтр</td>
-                <td class="price-table__cell">
-                  <div class="price-table__feature" data-feature-name="Розовый фильтр">
-                    <span class="price-table__feature-value price-table__feature-value--true">
-                      <span class="visually-hidden">Да</span>
-                    </span>
-                  </div>
-                </td>
-                <td class="price-table__cell">
-                  <div class="price-table__feature" data-feature-name="Розовый фильтр">
-                    <span class="price-table__feature-value price-table__feature-value--true">
-                      <span class="visually-hidden">Да</span>
-                    </span>
-                  </div>
-                </td>
-                <td class="price-table__cell">
-                  <div class="price-table__feature" data-feature-name="Розовый фильтр">
-                    <span class="price-table__feature-value price-table__feature-value--true">
-                      <span class="visually-hidden">Да</span>
-                    </span>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td class="price-table__cell">Смайлики</td>
-                <td class="price-table__cell">
-                  <div class="price-table__feature" data-feature-name="Смайлики">
-                    <span class="price-table__feature-value price-table__feature-value--false">
-                      <span class="visually-hidden">Нет</span>
-                    </span>
-                  </div>
-                </td>
-                <td class="price-table__cell">
-                  <div class="price-table__feature" data-feature-name="Смайлики">
-                    <span class="price-table__feature-value price-table__feature-value--true">
-                      <span class="visually-hidden">Да</span>
-                    </span>
-                  </div>
-                </td>
-                <td class="price-table__cell">
-                  <div class="price-table__feature" data-feature-name="Смайлики">
-                    <span class="price-table__feature-value price-table__feature-value--true">
-                      <span class="visually-hidden">Да</span>
-                    </span>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td class="price-table__cell">Комментарии</td>
-                <td class="price-table__cell">
-                  <div class="price-table__feature" data-feature-name="Комментарии">
-                    <span class="price-table__feature-value price-table__feature-value--false">
-                      <span class="visually-hidden">Нет</span>
-                    </span>
-                  </div>
-                </td>
-                <td class="price-table__cell">
-                  <div class="price-table__feature" data-feature-name="Комментарии">
-                    <span class="price-table__feature-value price-table__feature-value--false">
-                      <span class="visually-hidden">Нет</span>
-                    </span>
-                  </div>
-                </td>
-                <td class="price-table__cell">
-                  <div class="price-table__feature" data-feature-name="Комментарии">
-                    <span class="price-table__feature-value price-table__feature-value--true">
-                      <span class="visually-hidden">Да</span>
-                    </span>
-                  </div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          <div class="price__dots slider__dots">
-            <button class="slider__button" type="button" aria-label="1"></button>
-            <button class="slider__button slider__button--active" type="button" aria-label="2"></button>
-            <button class="slider__button" type="button" aria-label="3"></button>
+          <div class="slider">
+            <div class="slider__wrapper">
+              <table class="price__table price-table">
+                <thead>
+                  <tr>
+                    <th class="price-table__header">
+                    </th>
+                    <th class="price-table__header">
+                        <span class="price-table__version-type">База</span>
+                        <span class="price-table__version-price">1.99 USD</span>
+                    </th>
+                    <th class="price-table__header price-table__header--hit">
+                      <span class="price-table__version-type">Стандарт</span>
+                      <span class="price-table__version-price">3.99 USD</span>
+                    </th>
+                    <th class="price-table__header">
+                      <span class="price-table__version-type">Анлим</span>
+                      <span class="price-table__version-price">9.99 USD</span>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="price-table__cell">Розовый фильтр</td>
+                    <td class="price-table__cell">
+                      <div class="price-table__feature" data-feature-name="Розовый фильтр">
+                        <span class="price-table__feature-value price-table__feature-value--true">
+                          <span class="visually-hidden">Да</span>
+                        </span>
+                      </div>
+                    </td>
+                    <td class="price-table__cell">
+                      <div class="price-table__feature" data-feature-name="Розовый фильтр">
+                        <span class="price-table__feature-value price-table__feature-value--true">
+                          <span class="visually-hidden">Да</span>
+                        </span>
+                      </div>
+                    </td>
+                    <td class="price-table__cell">
+                      <div class="price-table__feature" data-feature-name="Розовый фильтр">
+                        <span class="price-table__feature-value price-table__feature-value--true">
+                          <span class="visually-hidden">Да</span>
+                        </span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="price-table__cell">Смайлики</td>
+                    <td class="price-table__cell">
+                      <div class="price-table__feature" data-feature-name="Смайлики">
+                        <span class="price-table__feature-value price-table__feature-value--false">
+                          <span class="visually-hidden">Нет</span>
+                        </span>
+                      </div>
+                    </td>
+                    <td class="price-table__cell">
+                      <div class="price-table__feature" data-feature-name="Смайлики">
+                        <span class="price-table__feature-value price-table__feature-value--true">
+                          <span class="visually-hidden">Да</span>
+                        </span>
+                      </div>
+                    </td>
+                    <td class="price-table__cell">
+                      <div class="price-table__feature" data-feature-name="Смайлики">
+                        <span class="price-table__feature-value price-table__feature-value--true">
+                          <span class="visually-hidden">Да</span>
+                        </span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="price-table__cell">Комментарии</td>
+                    <td class="price-table__cell">
+                      <div class="price-table__feature" data-feature-name="Комментарии">
+                        <span class="price-table__feature-value price-table__feature-value--false">
+                          <span class="visually-hidden">Нет</span>
+                        </span>
+                      </div>
+                    </td>
+                    <td class="price-table__cell">
+                      <div class="price-table__feature" data-feature-name="Комментарии">
+                        <span class="price-table__feature-value price-table__feature-value--false">
+                          <span class="visually-hidden">Нет</span>
+                        </span>
+                      </div>
+                    </td>
+                    <td class="price-table__cell">
+                      <div class="price-table__feature" data-feature-name="Комментарии">
+                        <span class="price-table__feature-value price-table__feature-value--true">
+                          <span class="visually-hidden">Да</span>
+                        </span>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+                </table>
+                <div class="price-slider__slider-dots slider__dots">
+                  <button class="slider-dot__button" type="button" aria-label="1"></button>
+                  <button class="slider-dot__button slider-dot__button--active" type="button" aria-label="2"></button>
+                  <button class="slider-dot__button" type="button" aria-label="3"></button>
+                </div>
+            </div>
           </div>
         </div>
       </section>

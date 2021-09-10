@@ -5,13 +5,13 @@
 .feedback-form {
   max-width: 940px;
 
-  @media (min-width: 600px) {
+  @media @tablet {
     display: flex;
     flex-direction: column;
     padding: 0 20px;
   }
 
-  @media (min-width: 1280px) {
+  @media @desktop {
     flex-wrap: wrap;
     flex-direction: row;
   }
@@ -20,12 +20,12 @@
 .feedback-form__username-wrapper {
   padding-bottom: 42px;
 
-  @media (min-width: 600px) {
+  @media @tablet {
     padding-top: 34px;
     padding-bottom: 32px;
   }
 
-  @media (min-width: 1280px) {
+  @media @desktop {
     padding-top: 36px;
     padding-bottom: 30px;
     width: 433px;
@@ -35,14 +35,14 @@
 .feedback-form__username-item {
   margin-bottom: 17px;
 
-  @media (min-width: 600px) {
+  @media @tablet {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 51px;
   }
 
-  @media (min-width: 1280px) {
+  @media @desktop {
     margin-bottom: 55px;
   }
 
@@ -61,7 +61,7 @@
     background-color: #ffffff;
   }
 
-  @media (min-width: 1280px) {
+  @media @desktop {
     width: 100%;
   }
 }
@@ -70,12 +70,12 @@
   padding-top: 42px;
   padding-bottom: 44px;
 
-  @media (min-width: 600px) {
+  @media @tablet {
     padding-top: 51px;
     order: 3;
   }
 
-  @media (min-width: 1280px) {
+  @media @desktop {
     width: 100%;
   }
 }
@@ -89,7 +89,7 @@
     background-color: #ffffff;
   }
 
-  @media (min-width: 1280px) {
+  @media @desktop {
     width: 431px;
     margin-left: auto;
   }
@@ -99,11 +99,11 @@
   padding-top: 42px;
   padding-bottom: 26px;
 
-  @media (min-width: 600px) {
+  @media @tablet {
     order: 5;
   }
 
-  @media (min-width: 1280px) {
+  @media @desktop {
     width: 100%;
   }
 }
@@ -114,14 +114,14 @@
   padding-top: 26px;
   padding-bottom: 26px;
 
-  @media (min-width: 600px) {
+  @media @tablet {
     order: 6;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
 
-  @media (min-width: 1280px) {
+  @media @desktop {
     width: 100%;
   }
 }
@@ -132,13 +132,13 @@
   padding: 0 20px;
   border: 0;
 
-  @media (min-width: 600px) {
+  @media @tablet {
     border: 2px solid #e5e5e5;
     border-radius: 1px;
   }
 
   &--username {
-    @media (min-width: 600px) {
+    @media @tablet {
       border: none;
     }
   }
@@ -147,21 +147,21 @@
     padding-top: 38px;
     padding-bottom: 38px;
 
-    @media (min-width: 600px) {
+    @media @tablet {
       padding: 52px 58px 49px;
     }
 
-    @media (min-width: 1280px) {
+    @media @desktop {
       padding: 52px 8px 13px 58px;
     }
   }
 
   &--contacts {
-    @media (min-width: 600px) {
+    @media @tablet {
       padding: 46px 58px 26px;
     }
 
-    @media (min-width: 1280px) {
+    @media @desktop {
       padding: 43px 58px 13px;
     }
   }
@@ -170,22 +170,22 @@
     padding-top: 34px;
     padding-bottom: 34px;
 
-    @media (min-width: 600px) {
+    @media @tablet {
       padding: 52px 58px 55px;
     }
 
-    @media (min-width: 1280px) {
+    @media @desktop {
       padding: 54px 50px 56px 74px;
       width: auto;
     }
   }
 
   &--emotions {
-    @media (min-width: 600px) {
+    @media @tablet {
       padding: 46px 58px 51px;
     }
 
-    @media (min-width: 1280px) {
+    @media @desktop {
       padding: 43px 58px 43px;
     }
   }
@@ -202,7 +202,7 @@
   text-transform: uppercase;
   color: #d22856;
 
-  @media (min-width: 600px) {
+  @media @tablet {
     position: absolute;
     left: 0;
     top: 0;
@@ -213,14 +213,14 @@
   &--contacts {
     display: none;
 
-    @media (min-width: 600px) {
+    @media @tablet {
       display: block;
     }
   }
 }
 
 .feedback-form__legend-text {
-  @media (min-width: 600px) {
+  @media @tablet {
     display: inline-flex;
     max-width: 90%;
     background-color: #ffffff;
@@ -228,7 +228,7 @@
 
   &::before,
   &::after {
-    @media (min-width: 600px) {
+    @media @tablet {
       content: "";
     }
   }
@@ -248,7 +248,7 @@
   list-style: none;
 
   &--row {
-    @media (min-width: 1280px) {
+    @media @desktop {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
@@ -259,14 +259,14 @@
 .feedback-form__name-item {
   margin-bottom: 29px;
 
-  @media (min-width: 600px) {
+  @media @tablet {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 51px;
   }
 
-  @media (min-width: 1280px) {
+  @media @desktop {
     margin-bottom: 53px;
   }
 
@@ -275,7 +275,7 @@
   }
 
   &--contacts {
-    @media (min-width: 600px) {
+    @media @tablet {
       flex-direction: column;
       align-items: flex-start;
       position: relative;
@@ -294,7 +294,7 @@
       }
     }
 
-    @media (min-width: 1280px) {
+    @media @desktop {
       margin-bottom: 0;
       width: 371px;
     }
@@ -312,7 +312,7 @@
 .feedback-form__achievements-item {
   margin-bottom: 47px;
 
-  @media (min-width: 1280px) {
+  @media @desktop {
     width: 260px;
   }
 
@@ -330,7 +330,7 @@
 }
 
 .feedback-form__button {
-  @media (min-width: 600px) {
+  @media @tablet {
     width: 296px;
   }
 }
@@ -343,12 +343,12 @@
   text-align: center;
   text-transform: uppercase;
 
-  @media (min-width: 600px) {
+  @media @tablet {
     margin-top: 0;
     text-align: right;
   }
 
-  @media (min-width: 1280px) {
+  @media @desktop {
     width: 320px;
   }
 }
@@ -356,7 +356,7 @@
 .feedback-form__notification-add {
   display: none;
 
-  @media (min-width: 1280px) {
+  @media @desktop {
     display: inline;
   }
 }
@@ -381,7 +381,7 @@
   }
 
   &--contacts {
-    @media (min-width: 600px) {
+    @media @tablet {
       order: 1;
       margin-top: 12px;
       margin-left: 17px;
@@ -411,7 +411,7 @@
 }
 
 .feedback-form__input--contacts {
-  @media (min-width: 600px) {
+  @media @tablet {
     padding-right: 90px;
   }
 }
@@ -483,7 +483,7 @@
   line-height: 30px;
   cursor: pointer;
 
-  @media (min-width: 600px) {
+  @media @tablet {
     padding-left: 59px;
   }
 
@@ -546,12 +546,12 @@
   -ms-overflow-style: -ms-autohiding-scrollbar;
   resize: vertical;
 
-  @media (min-width: 600px) {
+  @media @tablet {
     margin-top: 0;
     min-height: 193px;
   }
 
-  @media (min-width: 1280px) {
+  @media @desktop {
     min-height: 128px;
   }
 }

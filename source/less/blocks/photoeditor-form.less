@@ -15,14 +15,14 @@
   padding-top: 20px;
   padding-bottom: 41px;
 
-  @media (min-width: 600px) {
+  @media @tablet {
     flex-direction: row;
     align-items: flex-start;
     padding-top: 40px;
     padding-bottom: 29px;
   }
 
-  @media (min-width: 1280px) {
+  @media @desktop {
     padding: 41px 60px 57px 80px;
   }
 }
@@ -33,7 +33,7 @@
   height: 374px;
   background-image: url("../img/photo-7-mobile.jpg");
 
-  @media (min-width: 600px) {
+  @media @tablet {
     width: 300px;
     height: 400px;
     background-image: url("../img/photo-7-tablet.jpg");
@@ -43,14 +43,14 @@
 .photoeditor-form__tools {
   box-sizing: border-box;
 
-  @media (min-width: 600px) {
+  @media @tablet {
     margin-top: 0;
     margin-left: auto;
     margin-right: auto;
     width: 275px;
   }
 
-  @media (min-width: 1280px) {
+  @media @desktop {
     margin-left: 90px;
     margin-right: 0;
     width: 410px;
@@ -60,12 +60,12 @@
 .photoeditor-form__filters {
   padding: 42px 20px 38px;
 
-  @media (min-width: 600px) {
+  @media @tablet {
     margin-bottom: 50px;
     padding: 0;
   }
 
-  @media (min-width: 1280px) {
+  @media @desktop {
     margin-bottom: 130px;
   }
 }
@@ -75,7 +75,7 @@
   justify-content: space-around;
   width: 240px;
 
-  @media (min-width: 600px) {
+  @media @tablet {
     display: none;
   }
 }
@@ -86,36 +86,36 @@
   pointer-events: none;
 
   &--crop {
-    @media (min-width: 600px) {
+    @media @tablet {
       width: 22px;
       height: 22px;
     }
 
-    @media (min-width: 1280px) {
+    @media @desktop {
       width: 44px;
       height: 44px;
     }
   }
 
   &--fill {
-    @media (min-width: 600px) {
+    @media @tablet {
       width: 24px;
       height: 22px;
     }
 
-    @media (min-width: 1280px) {
+    @media @desktop {
       width: 48px;
       height: 43px;
     }
   }
 
   &--contrast {
-    @media (min-width: 600px) {
+    @media @tablet {
       width: 16px;
       height: 16px;
     }
 
-    @media (min-width: 1280px) {
+    @media @desktop {
       width: 32px;
       height: 32px;
     }
@@ -127,13 +127,13 @@
   justify-content: center;
   align-items: center;
 
-  @media (min-width: 600px) {
+  @media @tablet {
     display: flex;
     width: 27px;
     height: 27px;
   }
 
-  @media (min-width: 1280px) {
+  @media @desktop {
     width: 48px;
     height: 48px;
   }
@@ -176,7 +176,7 @@
   align-items: center;
   height: 72px;
 
-  @media (min-width: 600px) {
+  @media @tablet {
     display: flex;
   }
 
@@ -185,10 +185,11 @@
     position: absolute;
     left: -40px;
     bottom: 0;
+    width: 320px;
     height: 1px;
     background-color: #dddfe0;
 
-    @media (min-width: 600px) {
+    @media @tablet {
       left: 0;
       width: 100%;
     }
@@ -199,8 +200,22 @@
   }
 }
 
+.photoeditor-form__filter-range {
+  margin: 0 auto;
+  width: 240px;
+  background-color: transparent;
+
+  @media @tablet {
+    width: 202px;
+  }
+
+  @media @desktop {
+    width: 288px;
+  }
+}
+
 .photoeditor-form__buttons {
-  @media (min-width: 1280px) {
+  @media @desktop {
     display: flex;
     justify-content: space-between;
     padding-left: 0;
@@ -212,12 +227,12 @@
   margin-bottom: 13px;
   width: 100%;
 
-  @media (min-width: 600px) {
+  @media @tablet {
     margin-bottom: 26px;
     width: 260px;
   }
 
-  @media (min-width: 1280px) {
+  @media @desktop {
     margin-bottom: 0;
     width: 45%;
   }

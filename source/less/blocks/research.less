@@ -1,11 +1,11 @@
 .research {
   display: none;
 
-  @media (min-width: 600px) {
+  @media @tablet {
     display: block;
   }
 
-  @media (min-width: 1280px) {
+  @media @desktop {
     background-color: #f2f2f2;
   }
 }
@@ -15,13 +15,13 @@
   padding: 60px 20px 72px;
   width: 280px;
 
-  @media (min-width: 600px) {
+  @media @tablet {
     display: flex;
     justify-content: space-between;
     width: 620px;
   }
 
-  @media (min-width: 1280px) {
+  @media @desktop {
     padding: 17px 10px 7px;
     width: 940px;
     height: 429px;
@@ -37,7 +37,7 @@
   background-size: 202px 202px, 238px 276px;
   background-position: 19px 55px, 0 0;
 
-  @media (min-width: 1280px) {
+  @media @desktop {
     padding: 94px 64px 64px 80px;
     width: 298px;
     background-size: 252px 252px, 298px 345px;
@@ -51,7 +51,7 @@
   line-height: 163px;
   color: #d22856;
 
-  @media (min-width: 1280px) {
+  @media @desktop {
     font-size: 120px;
     line-height: 163px;
   }
@@ -61,7 +61,7 @@
   margin-top: 11px;
   width: 310px;
 
-  @media (min-width: 1280px) {
+  @media @desktop {
     margin-top: 65px;
     width: 534px;
     font-size: 18px;
@@ -78,7 +78,7 @@
   line-height: 36px;
   color: #000000;
 
-  @media (min-width: 1280px) {
+  @media @desktop {
     margin-top: 24px;
     margin-bottom: 22px;
     width: 298px;
@@ -87,14 +87,15 @@
 }
 
 .research__info-text {
-  width: 534px;
+  width: 310px;
   margin-top: 10px;
   margin-bottom: 11px;
   font-size: 14px;
   line-height: 24px;
   color: #283645;
 
-  @media (min-width: 1280px) {
+  @media @desktop {
+    width: 534px;
     margin-top: 22px;
     margin-bottom: 31px;
     font-size: 18px;
@@ -107,14 +108,14 @@
   line-height: 24px;
   color: #d22856;
 
-  @media (min-width: 1280px) {
+  @media @desktop {
     font-size: 18px;
     line-height: 30px;
   }
 }
 
 .desktop-hidden {
-  @media (min-width: 1280px) {
+  @media @desktop {
     display: none;
   }
 }
