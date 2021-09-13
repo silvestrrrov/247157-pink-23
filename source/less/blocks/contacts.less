@@ -1,5 +1,4 @@
 .contacts {
-  padding-top: 50px;
   padding-bottom: 42px;
   text-align: center;
 }
@@ -33,17 +32,39 @@
   flex-wrap: wrap;
   justify-content: center;
   margin: 0;
+
+  @media @tablet {
+    justify-content: space-around;
+  }
 }
 
 .contacts__item {
   margin: 0;
   padding: 0;
   list-style: none;
-  width: 250px;
+  width: 280px;
   margin-bottom: 31px;
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  &--phone {
+    @media @desktop {
+      order: 1;
+    }
+  }
+
+  &--email {
+    @media @desktop {
+      order: 3;
+    }
+  }
+
+  &--adress {
+    @media @desktop {
+      order: 2;
+    }
   }
 }
 
@@ -63,4 +84,14 @@
 .contacts__link {
   text-decoration: none;
   color: #d22856;
+
+  &:hover {
+    text-decoration: underline;
+    color: #283645;
+  }
+
+  &:active {
+    text-decoration: none;
+    color: fade(#283645, 30%);
+  }
 }

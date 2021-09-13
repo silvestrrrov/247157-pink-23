@@ -1,8 +1,5 @@
 .price-slider {
-  margin: 0 auto;
   padding-top: 104px;
-  padding-right: 20px;
-  padding-left: 20px;
   padding-bottom: 49px;
   background-color: #f2f2f2;
 
@@ -13,10 +10,13 @@
 }
 
 .price-slider__wrapper {
+  overflow: hidden;
   line-height: 30px;
   text-transform: uppercase;
-  padding-left: 20px;
+  max-width: 940px;
+  margin: 0 auto;
   padding-right: 20px;
+  padding-left: 20px;
 }
 
 .price-slider__slider-dots {
@@ -28,5 +28,14 @@
 }
 
 .price__table {
-  width: 940px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: left 0.4s linear;
+
+  @media @tablet {
+    position: static;
+    left: auto;
+    transform: none;
+  }
 }

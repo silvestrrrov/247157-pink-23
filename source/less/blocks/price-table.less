@@ -1,0 +1,148 @@
+.price-table {
+  width: 840px;
+  border-spacing: 0;
+
+  @media @tablet {
+    width: 620px;
+  }
+
+  @media @desktop {
+    width: 940px;
+  }
+}
+
+.price-table__header {
+  position: relative;
+  padding-top: 17px;
+  padding-bottom: 21px;
+  border-right: 2px solid #e5e5e5;
+  font-size: 18px;
+  color: #ffffff;
+  background-color: #283645;
+
+  @media @tablet {
+    padding-top: 10px;
+    padding-bottom: 8px;
+  }
+
+  @media @desktop {
+    padding-top: 16px;
+    padding-bottom: 22px;
+  }
+
+  &:first-child {
+    display: none;
+    border-right: 0;
+    border-bottom: 2px solid #e5e5e5;
+    background-color: transparent;
+
+    @media @tablet {
+      display: table-cell;
+    }
+  }
+}
+
+.price-table__version-type,
+.price-table__version-price {
+  display: block;
+}
+
+.price-table__version-type {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+
+  @media @tablet {
+    font-size: 16px;
+  }
+
+  @media @desktop {
+    font-size: 18px;
+  }
+}
+
+.price-table__version-price {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+
+  @media @tablet {
+    font-size: 18px;
+  }
+
+  @media @desktop {
+    font-size: 24px;
+  }
+}
+
+.price-table__cell {
+  font-size: 14px;
+  padding: 15px 18px 14px 22px;
+  border-right: 2px solid #e5e5e5;
+  border-bottom: 2px solid #e5e5e5;
+  background-color: #ffffff;
+
+  @media @tablet {
+    padding: 7px 20px 8px;
+    width: 25%;
+  }
+
+  @media @desktop {
+    padding: 14px 20px 15px;
+  }
+
+  &:first-child {
+    display: none;
+    border-left: 2px solid #e5e5e5;
+
+    @media @tablet {
+      display: table-cell;
+      padding-left: 14px;
+      padding-right: 14px;
+      text-transform: none;
+      font-size: 14px;
+    }
+
+    @media @desktop {
+      padding-left: 21px;
+      padding-right: 21px;
+      font-size: 18px;
+    }
+  }
+}
+
+.price-table__feature {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media @tablet {
+    justify-content: center;
+  }
+
+  &::before {
+    content: attr(data-feature-name);
+
+    @media @tablet {
+      content: "";
+    }
+  }
+}
+
+.price-table__feature-value {
+  display: block;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &--true {
+    width: 31px;
+    height: 21px;
+    background-image: url("../img/icon-true.svg");
+  }
+
+  &--false {
+    width: 27px;
+    height: 27px;
+    background-image: url("../img/icon-false.svg");
+  }
+}

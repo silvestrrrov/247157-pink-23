@@ -7,6 +7,14 @@
   text-align: center;
   margin: 0 auto;
   max-width: 940px;
+
+  @media @desktop {
+    padding-top: 180px;
+    padding-bottom: 40px;
+    background-image: url("../img/quotes.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 70px;
+  }
 }
 
 .reviews-slider__slide {
@@ -93,4 +101,13 @@
 
 .reviews-slider__slider-nav {
   display: none;
+
+  @media @desktop {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    top: 50%;
+    left: 10px;
+    right: 10px;
+  }
 }
