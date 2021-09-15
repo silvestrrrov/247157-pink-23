@@ -1,13 +1,15 @@
 .price-table {
-  width: 840px;
+  min-width: 828px;
   border-spacing: 0;
 
   @media @tablet {
-    width: 620px;
+    padding-right: 20px;
+    padding-left: 20px;
+    min-width: 100%;
   }
 
   @media @desktop {
-    width: 940px;
+    min-width: 940px;
   }
 }
 
@@ -52,10 +54,6 @@
   font-size: 16px;
   line-height: 30px;
 
-  @media @tablet {
-    font-size: 16px;
-  }
-
   @media @desktop {
     font-size: 18px;
   }
@@ -65,10 +63,6 @@
   font-weight: 300;
   font-size: 18px;
   line-height: 30px;
-
-  @media @tablet {
-    font-size: 18px;
-  }
 
   @media @desktop {
     font-size: 24px;

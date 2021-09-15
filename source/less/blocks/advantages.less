@@ -1,5 +1,18 @@
 .advantages {
-  background-color: #f2f2f2;
+  background-image: url("../img/advabtages-bg-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 828px;
+
+  @media @tablet {
+    background-image: url("../img/advabtages-bg-tablet.svg");
+    background-size: 100% 700px;
+  }
+
+  @media @desktop {
+    margin-top: 66px;
+    background-image: url("../img/advabtages-bg-desktop.svg");
+    background-size: 100%;
+  }
 }
 
 .advantages__list {
@@ -12,12 +25,16 @@
   background-repeat: no-repeat;
   background-position: 50% ~"calc(100% + 35px)";
 
+  @media (max-width: 659px) {
+    padding-top: 90px;
+  }
+
   @media @tablet {
     justify-content: end;
     width: 620px;
-    padding: 25px 20px 35px;
+    padding: 85px 20px 35px;
     background-image: url("../img/advantages-phone-tablet.svg");
-    background-position: 20px 3px;
+    background-position: 20px 30px;
   }
 
   @media @desktop {
@@ -75,7 +92,7 @@
 
 .advantages__title {
   margin-top: 18px;
-  margin-bottom: 24px;
+  margin-bottom: 14px;
   font-weight: bold;
   font-size: 18px;
   line-height: 24px;
