@@ -1,51 +1,70 @@
 .page-header {
+  position: relative;
   color: #ffffff;
   background-image: url("../img/back-mobile.jpg");
+  background-repeat: no-repeat;
   background-size: 100%;
   background-color: #1d2631;
-}
 
-@media @tablet {
-  .page-header {
+  @media @tablet {
     background-image: url("../img/back-tablet.jpg");
+  }
+
+  @media @desktop {
+    background-image: url("../img/back-desktop.jpg");
   }
 }
 
-@media @desktop {
-  .page-header {
-    background-image: url("../img/back-desktop.jpg");
+.page-header__nav-wrapper {
+  background-color: fade(#000000, 30%);
+}
+
+.page-header__main-nav {
+  margin: 0 auto;
+}
+
+.page-header__download {
+  margin: 0 auto;
+}
+
+.page-header__title-wrapper {
+  padding: 16px 20px 40px;
+  min-height: 171px;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  @media @tablet {
+    padding-top: 40px;
+    min-height: 330px;
+  }
+
+  @media @desktop {
+    padding-top: 30px;
+    padding-bottom: 67px;
+    min-height: 284px;
   }
 }
 
 .page-header__title {
   margin: 0 auto;
-  padding-top: 36px;
-  width: 228px;
-  height: 135px;
+  margin-top: 10px;
+  margin-bottom: 15px;
   font-weight: 300;
   font-size: 24px;
   line-height: 33px;
   text-align: center;
+  width: 228px;
 
   @media @tablet {
-    padding-top: 60px;
-    width: 620px;
-    height: 270px;
+    margin-top: 30px;
+    margin-bottom: 15px;
     font-size: 50px;
     line-height: 68px;
+    width: 620px;
   }
 
   @media @desktop {
-    padding-top: 64px;
+    margin-top: 30px;
     width: 747px;
-    height: 220px;
   }
-}
-
-.logo--page-header {
-  display: inline-flex;
-}
-
-.page-header-intro {
-  margin: 0 auto;
 }
