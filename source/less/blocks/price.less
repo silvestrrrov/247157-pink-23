@@ -1,22 +1,21 @@
 .price-slider {
-  margin: 0 auto;
-  padding-top: 104px;
-  padding-right: 20px;
-  padding-left: 20px;
-  padding-bottom: 49px;
-  background-color: #f2f2f2;
-
-  @media @tablet {
-    padding-top: 98px;
-    padding-bottom: 70px;
-  }
-}
-
-.price-slider__wrapper {
   line-height: 30px;
   text-transform: uppercase;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-top: 100px;
+  padding-bottom: 45px;
+  background-image: url("../img/price-bg-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+  @media @tablet {
+    padding-top: 20px;
+    padding-bottom: 70px;
+    background-image: url("../img/price-bg-tablet.svg");
+  }
+
+  @media @desktop {
+    background-image: url("../img/price-bg-desktop.svg");
+  }
 }
 
 .price-slider__slider-dots {
@@ -28,5 +27,21 @@
 }
 
 .price__table {
-  width: 940px;
+  padding-top: 40px;
+  margin: 0 auto;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: left 0.4s linear;
+
+  @media @tablet {
+    padding-top: 120px;
+    position: static;
+    left: auto;
+    transform: none;
+  }
+
+  @media @desktop {
+    padding-top: 170px;
+  }
 }

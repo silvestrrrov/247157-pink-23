@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favicon-16.svg" sizes="16x16" type="image/svg+xml">
+    <link rel="icon" href="img/favicon-32.svg" sizes="32x32" type="image/svg+xml">
+    <link rel="icon" href="img/favicon-152.svg" sizes="152x152" type="image/svg+xml">
   </head>
   <body class="page__body">
     <svg display="none">
@@ -74,8 +77,8 @@
       </symbol>
     </svg>
     <header class="page-header">
-      <nav class="main-nav">
-        <div class="main-nav__main-wrapper">
+      <div class="page-header__nav-wrapper">
+        <nav class="page-header__main-nav main-nav">
           <div class="main-nav__logo-wrapper">
             <a class="logo logo--page-header" href="index.html">
               <svg class="logo-pink-white-mobile" width="74" height="23">
@@ -96,8 +99,6 @@
                 <use xlink:href="#icon-menu-close"></use>
               </svg> Открыть меню</button>
           </div>
-        </div>
-        <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--active">
               <a class="main-nav__link">Главная</a>
@@ -112,35 +113,32 @@
               <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML Academy</a>
             </li>
           </ul>
+        </nav>
+      </div>
+      <div class="page-header__download download">
+        <h2 class="download__title-only-mobile">Взгляните на жизнь<br>иначе!</h2>
+        <div class="download__wrapper">
+          <h2 class="download__title">Взгляните<br> на жизнь иначе!</h2>
+          <a class="download__link-main" href="https://www.apple.com/ru/app-store/" target="_blank"><p>Скачать приложение</p></a>
+          <ul class="download__list">
+            <li class="download__item">
+              <a class="download__link download__link--appstore" href="https://www.apple.com/ru/app-store/" target="_blank">
+                <img src="img/apple-logo.svg" width="47" height="56" alt="Логотип Apple">
+              </a>
+            </li>
+            <li class="download__item">
+              <a class="download__link download__link--googleplay" href="https://play.google.com/store/" target="_blank">
+                <img src="img/android-logo.svg" width="43" height="47" alt="Логотип Android">
+              </a>
+            </li>
+            <li class="download__item">
+              <a class="download__link download__link--microsoftstore" href="https://www.microsoft.com/ru-ru/store/apps/windows-phone" target="_blank">
+                <img src="img/microsoft-logo.svg" width="44" height="41" alt="Логотип Microsoft">
+              </a>
+            </li>
+          </ul>
+          <p class="download__info">Доступно для iPhone, iPad, Android,<br> Windows Phone, OS X, Windows 8</p>
         </div>
-      </nav>
-      <div class="page-header__wrapper">
-        <section class="intro">
-          <div class="intro__wrapper">
-            <h2 class="intro__header">Взгляните на жизнь<br> иначе!</h2>
-            <div class="intro__download">
-              <a class="download__link-main" href="https://www.apple.com/ru/app-store/" target="_blank"><p>Скачать приложение</p></a>
-              <ul class="download__list">
-                <li class="download__item">
-                  <a class="download__link download__link--appstore" href="https://www.apple.com/ru/app-store/" target="_blank">
-                    <img src="img/apple-logo.svg" width="47" height="56" alt="Логотип Apple">
-                  </a>
-                </li>
-                <li class="download__item">
-                  <a class="download__link download__link--googleplay" href="https://play.google.com/store/" target="_blank">
-                    <img src="img/android-logo.svg" width="43" height="47" alt="Логотип Android">
-                  </a>
-                </li>
-                <li class="download__item">
-                  <a class="download__link download__link--microsoftstore" href="https://www.microsoft.com/ru-ru/store/apps/windows-phone" target="_blank">
-                    <img src="img/microsoft-logo.svg" width="44" height="41" alt="Логотип Microsoft">
-                  </a>
-                </li>
-              </ul>
-              <p class="download__info">Доступно для iPhone, iPad, Android,<br> Windows Phone, OS X, Windows 8</p>
-            </div>
-          </div>
-        </section>
       </div>
     </header>
     <main class="page-main">
@@ -224,11 +222,10 @@
         </div>
       </section>
       <section class="price-slider">
-        <div class="price-slider__wrapper">
-          <h2 class="visually-hidden">Стоимость приложения</h2>
-          <div class="slider">
-            <div class="slider__wrapper">
-              <table class="price__table price-table">
+        <h2 class="visually-hidden">Стоимость приложения</h2>
+        <div class="slider">
+          <div class="slider__wrapper">
+            <table class="price__table price-table">
                 <thead>
                   <tr>
                     <th class="price-table__header">
@@ -321,13 +318,12 @@
                     </td>
                   </tr>
                 </tbody>
-                </table>
-                <div class="price-slider__slider-dots slider__dots">
-                  <button class="slider-dot__button" type="button" aria-label="1"></button>
-                  <button class="slider-dot__button slider-dot__button--active" type="button" aria-label="2"></button>
-                  <button class="slider-dot__button" type="button" aria-label="3"></button>
-                </div>
-            </div>
+              </table>
+              <div class="price-slider__slider-dots slider__dots">
+                <button class="slider-dot__button" type="button" aria-label="1"></button>
+                <button class="slider-dot__button slider-dot__button--active" type="button" aria-label="2"></button>
+                <button class="slider-dot__button" type="button" aria-label="3"></button>
+              </div>
           </div>
         </div>
       </section>

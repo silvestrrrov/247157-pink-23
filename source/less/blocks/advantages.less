@@ -1,17 +1,49 @@
 .advantages {
-  background-color: #f2f2f2;
+  background-image: url("../img/advabtages-bg-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 828px;
+
+  @media @tablet {
+    background-image: url("../img/advabtages-bg-tablet.svg");
+    background-size: 100% 700px;
+  }
+
+  @media @desktop {
+    margin-top: 66px;
+    background-image: url("../img/advabtages-bg-desktop.svg");
+    background-size: 100%;
+  }
 }
 
 .advantages__list {
   display: grid;
   justify-content: center;
   margin: 0 auto;
-  padding: 0;
+  padding: 30px 20px 305px;
   list-style: none;
+  background-image: url("../img/advantages-phone-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: 50% ~"calc(100% + 35px)";
+
+  @media (max-width: 659px) {
+    padding-top: 90px;
+  }
+
+  @media @tablet {
+    justify-content: end;
+    width: 620px;
+    padding: 85px 20px 35px;
+    background-image: url("../img/advantages-phone-tablet.svg");
+    background-position: 20px 30px;
+  }
 
   @media @desktop {
     gap: 68px;
     grid-template-columns: 252px 252px 252px;
+    justify-content: center;
+    background: 0;
+    width: 940px;
+    padding: 0 0 34px;
   }
 }
 
@@ -21,17 +53,46 @@
   text-align: center;
   font-size: 14px;
   line-height: 24px;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+
+  @media @tablet {
+    width: 310px;
+    margin-bottom: 0;
+    text-align: left;
+  }
 
   @media @desktop {
+    padding-top: 339px;
     width: 252px;
     font-size: 18px;
     line-height: 30px;
+    text-align: center;
+    background-size: 292px 420px;
+  }
+
+  &--first {
+    @media @desktop {
+      background-image: url("../img/advantages-phone-desktop-1.svg");
+    }
+  }
+
+  &--second {
+    @media @desktop {
+      background-image: url("../img/advantages-phone-desktop-2.svg");
+    }
+  }
+
+  &--third {
+    @media @desktop {
+      background-image: url("../img/advantages-phone-desktop-3.svg");
+    }
   }
 }
 
 .advantages__title {
   margin-top: 18px;
-  margin-bottom: 24px;
+  margin-bottom: 14px;
   font-weight: bold;
   font-size: 18px;
   line-height: 24px;
@@ -40,6 +101,8 @@
   @media @desktop {
     font-size: 30px;
     line-height: 30px;
+    padding-top: 50px;
+    background-color: #f2f2f2;
   }
 }
 

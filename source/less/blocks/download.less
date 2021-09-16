@@ -1,6 +1,67 @@
+.download {
+  padding: 322px 20px 20px;
+  width: 280px;
+  background-image: url("../img/download-phone-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: 0 110px;
+
+  @media @tablet {
+    padding-top: 70px;
+    padding-bottom: 110px;
+    width: 620px;
+    background-image: url("../img/download-phone-tablet.svg");
+    background-position: -20px 74px;
+  }
+
+  @media @desktop {
+    padding: 108px 10px 122px;
+    width: 940px;
+    background-image: url("../img/download-phone-desktop.svg");
+    background-position: 26px 99px;
+  }
+}
+
+.download__wrapper {
+  @media @tablet {
+    width: 300px;
+  }
+}
+
+.download__title-only-mobile {
+  position: relative;
+  top: -320px;
+  font-weight: 300;
+  line-height: 29px;
+  text-align: center;
+
+  @media @tablet {
+    display: none;
+  }
+}
+
+.download__title {
+  display: none;
+  font-weight: 300;
+  line-height: 48px;
+  text-align: center;
+
+  @media @tablet {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 31px;
+    font-size: 40px;
+  }
+
+  @media @desktop {
+    margin-bottom: 52px;
+    font-size: 50px;
+    line-height: 68px;
+  }
+}
+
 .download__link-main {
   display: block;
-  width: 274px;
+  width: 280px;
   margin: 0 auto;
   font-weight: bold;
   font-size: 18px;
@@ -10,6 +71,14 @@
   border: 3px solid #ffffff;
   border-radius: 29px;
   color: #ffffff;
+
+  @media @tablet {
+    width: 300px;
+  }
+
+  @media @desktop {
+    font-size: 21px;
+  }
 
   &:hover,
   &:focus {
@@ -26,24 +95,43 @@
 .download__list {
   display: flex;
   justify-content: center;
-  margin-top: 38px;
+  margin-top: 32px;
+  list-style: none;
+  padding-left: 0;
+
+  @media @tablet {
+    margin-top: 46px;
+    margin-bottom: 38px;
+  }
+
+  @media @desktop {
+    margin-top: 60px;
+    margin-bottom: 50px;
+  }
 }
 
 .download__item {
-  display: block;
-  margin-right: 35px;
+  margin-left: 12px;
+  margin-right: 12px;
 }
 
 .download__link {
-  display: inline-flex;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 56px;
+  height: 56px;
 }
 
 .download__info {
-  display: block;
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
   text-align: center;
-  margin-top: 28px;
+  margin-top: 18px;
   color: #ffffff;
+
+  @media @tablet {
+    font-size: 18px;
+  }
 }
